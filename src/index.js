@@ -4,13 +4,11 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import CardList from "./CardList";
 import 'tachyons';
-// we use { robots } since we have few exports (from robots.js)
+// we use { robots } since we have few exports from robots.js
 import { robots } from './robots';
-import Card from './Card';
 
 ReactDOM.render(
                 <CardList robots={robots}/>
-                //<CardList robots={robots}/> //CardList accepts robots as props
 , document.getElementById('root'));
 
 /*
