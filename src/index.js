@@ -1,25 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Card from './Card';
+import CardList from "./CardList";
 import 'tachyons';
-// we us { robots } since we have few exports (from robots.js)
+// we use { robots } since we have few exports (from robots.js)
 import { robots } from './robots';
 
 ReactDOM.render(
-                /*
-                 we can only return one element, so we wrap
-                 few Card-Components in a <div>
-                 we will add properties to each Card
-                */
-                <div>
-                    <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
-                    <Card id={robots[1].id} name={robots[1].name} email={robots[1].email}/>
-                    <Card id={robots[2].id} name={robots[2].name} email={robots[2].email}/>
-                </div>
-
+                <CardList robots={robots}/> //CardList accepts robots as props
 , document.getElementById('root'));
 
 /*
