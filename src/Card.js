@@ -1,7 +1,9 @@
 // must import that in order to use JSX, the HTML-like code
 import React from 'react';
+import {robots} from "./robots";
 
-const Card = (props) => {
+const Card = ({name,id, email}) => {
+
     // we can only return one thing from Component
     // here, it's the <div> (we cannot add more)
     return (
@@ -21,10 +23,10 @@ const Card = (props) => {
          ?200x200 - the size of the robot as defined in the api
         */
         <div className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
-            <img src={`https://robohash.org/${props.id}?200x200`} alt="robots"/>
+            <img src={`https://robohash.org/${id}?200x200`} alt="robots"/>
             <div>
-                <h2>{ props.name }</h2>
-                <p>{ props.email }</p>
+                <h2>{ name }</h2>
+                <p>{ email }</p>
             </div>
         </div>
     );
