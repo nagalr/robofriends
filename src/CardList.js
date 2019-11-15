@@ -1,3 +1,4 @@
+// CardList Component is a parent of Card
 import React from 'react';
 import Card from './Card';
 
