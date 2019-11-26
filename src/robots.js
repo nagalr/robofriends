@@ -2,7 +2,7 @@
  This is a constant Object
  it's an array of Objects, each Object is a robot
  we not using 'export default' here,
- Hence, we can export few things
+ Hence, we can export few things at once
 */
 export const robots = [
   {
