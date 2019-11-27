@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import CardList from "./CardList";
 import 'tachyons';
 // we use { robots } since we have few exports from robots.js
-import { robots } from './robots';
+import App from "./App";
 
 ReactDOM.render(
-                <CardList robots={robots}/>
+                <App/>
 , document.getElementById('root'));
 
 /*
