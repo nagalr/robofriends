@@ -1,13 +1,13 @@
 import React from 'react';
 import CardList from "./CardList";
 import {robots} from "./robots";
-import searchBox from './searchBox';
+import SearchBox from './SearchBox';
 
 const App = () => {
     return (
         <div className='tc'>
             <h1>RoboFriends</h1>
-            <searchBox />
+            <SearchBox />
             <CardList robots={robots}/>
         </div>
     );
