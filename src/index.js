@@ -5,9 +5,11 @@ import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 // we use { robots } since we have few exports from robots.js
 import App from "./App";
+import CardList from "./CardList";
+import { robots } from './robots';
 
 ReactDOM.render(
-                <App />
+                <CardList robots={ robots }/>
 , document.getElementById('root'));
 
 /*
