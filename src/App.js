@@ -1,26 +1,17 @@
-import React, { Component } from 'react';
-import CardList from './CardList';
-import { robots } from './robots';
-import searchBox from './searchBox';
+import React from 'react';
+import CardList from "./CardList";
+import {robots} from "./robots";
+import searchBox from "./searchBox";
 
-class App extends Component {
-    constructor () {
-        super ();
-        this.state = {
-            robots : robots,
-            searchfield : ''
-        }
-    }
-    render () {
-        return (
-            <div className='tc'>
-                <h1>RoboFriends</h1>
-                <input type='search' placeholder='search robots' />
-                <CardList robots={this.state.robots}/>
-            </div>
-        )
-    }
-}
+const App = () => {
+    return (
+        <div>
+            <h1>RoboFriends</h1>
+            <searchBox />
+            <CardList robots={ robots }/>
+        </div>
+    );
+};
 
 export default App;
 
